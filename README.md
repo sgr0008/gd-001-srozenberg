@@ -2,7 +2,8 @@
 
 PROYECTO
 
-    Se crean documento que tienen un encabezado, un contexto /informacion (En la etapa 1. se genera en forma manual.).Los documentos se agrupan ;por el tipo (INFO,ERROR,SOLUCION,PRUEBA.) y cada documento, tiene un estado asociado.
+    Se crean documento que tienen un encabezado, un contexto /informacion (En la etapa 1. 
+    se genera en forma manual.).Los documentos se agrupan ;por el tipo (INFO,ERROR,SOLUCION,PRUEBA.) y cada documento, tiene un estado asociado.
 
 FUNCIONALIDADES    TODO
 
