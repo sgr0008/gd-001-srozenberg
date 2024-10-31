@@ -1,4 +1,4 @@
-package com.desa.documentador.dominio.enums;
+package com.documentador.dominio.enums;
 
 public enum TipoDocumentoEnum {
 

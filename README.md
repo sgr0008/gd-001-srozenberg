@@ -10,12 +10,14 @@ FUNCIONALIDADES    TODO
 ETAPAS DE DESARROLLO
 
 DOING           ETAPA 1. Generar y gestionar documentos . [20241017]
-TODO            ETAPA 2. Automatizar la genracion de contextos , utilizando set de preguntas y respuestas generadas con IA.
+TODO            ETAPA 2. Automatizar la genracion de Info  con  Consulta (Pregunta/Respuesta Por IA)  , utilizando set de preguntas y respuestas generadas con IA.
+TODO            Para la ETAPA 2. ver Spring IA
 
+ETAPAS DE PRUBAS
 PRUEBAS            TODO
 
 INFO. ADICIONAL
     En la carpeta 0001-Doc : Documentaciones adicionales.
 
-    Ultimo Update  [20241029]
+    Ultimo Update  [20241031]
                 
