@@ -21,7 +21,7 @@ public class Info {
     private String descripcion;
     @Column(columnDefinition = "TEXT")
     private String info;
-    // Trato la fecha como int Fecha  formato yyyyMMDDDhhmmss ; para ordenar , mas facil
+    //TODO PASAR A DOC. Trato la fecha como int Fecha  formato yyyyMMDDDhhmmss ; para ordenar , mas facil
     @Column
     private int fechaUltimoCambio;
 
