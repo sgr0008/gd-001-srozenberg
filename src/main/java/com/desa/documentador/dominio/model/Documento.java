@@ -32,6 +32,9 @@ public class Documento {
     private int fechaCreacion;
     @Column
     private EstadoDocumentoEnum estado;
+    //Fecha iny yyyyMMDDDhhmmss
+    @Column
+    private int fechaUltimoCambio;
 
 
 
