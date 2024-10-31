@@ -1,5 +1,7 @@
 package com.documentador.dominio.enums;
-
+/**
+ * Tipo o clasificacion particular del documento de un grupo.
+ */
 public enum TipoDocumentoEnum {
 
     INFO("Documento Informativo",0),

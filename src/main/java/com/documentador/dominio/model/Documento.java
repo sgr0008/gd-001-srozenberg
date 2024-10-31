@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /***
- * TODO Crear una clase ENCABEZADO y extender de esta la clase DOCUMENTO
+ * Informacion¿ de los documentos de un grupo
  */
 @Table(name = "documento")
 @Entity

@@ -1,5 +1,8 @@
 package com.documentador.dominio.model;
 
+/***
+ * Encabezado general de un grupo de documentos
+ */
 public abstract class Encabezado {
 
 private String tituloPrincipal;

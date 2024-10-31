@@ -1,5 +1,8 @@
 package com.documentador.dominio.enums;
 
+/**
+ * Estado particular del documento de un grupo.
+ */
 public enum EstadoDocumentoEnum {
 
     VALIDO("Documento ACTUAL VALIDO",0),

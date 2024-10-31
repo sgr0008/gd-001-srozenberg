@@ -5,6 +5,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/***
+ * Contexto o informacion de cada documento
+ * que integra un grupo
+ */
 @Entity
 @Table(name = "info")
 @Getter
