@@ -2,8 +2,10 @@
 
 PROYECTO
 
-    Se crean documento que tienen un encabezado, un contexto /informacion (En la etapa 1. 
-    se genera en forma manual.).Los documentos se agrupan ;por el tipo (INFO,ERROR,SOLUCION,PRUEBA.) y cada documento, tiene un estado asociado.
+        Se crean documento que tienen un encabezado, un contexto /informacion (En la etapa 1. )
+    se genera en forma manual.).
+         Los documentos se agrupan ;por el tipo (INFO,ERROR,SOLUCION,PRUEBA.) y cada documento ; para la trazbilidad tiene un estado asociado ,
+    fecha de ultima modificaioc y un propietario que valida las modificaciones/ cambios.
 
 FUNCIONALIDADES    TODO
 
@@ -19,5 +21,5 @@ PRUEBAS            TODO
 INFO. ADICIONAL
     En la carpeta 0001-Doc : Documentaciones adicionales.
 
-    Ultimo Update  [20241031]
+    Ultimo Update  [20241101]
                 

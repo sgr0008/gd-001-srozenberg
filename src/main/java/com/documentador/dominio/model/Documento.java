@@ -32,7 +32,7 @@ public class Documento extends Encabezado {
     private Usuario usuario;
     @Column
     private EstadoDocumentoEnum estado;
-    //Fecha iny yyyyMMDDDhhmmss
+    //Fecha int yyyyMMDDDhhmmss
     @Column
     private int fechaUltimoCambio;
 
