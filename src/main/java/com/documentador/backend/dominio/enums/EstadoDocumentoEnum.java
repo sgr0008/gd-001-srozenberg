@@ -1,4 +1,4 @@
-package com.documentador.dominio.enums;
+package com.documentador.backend.dominio.enums;
 
 /**
  * Estado particular del documento de un grupo.

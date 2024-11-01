@@ -1,6 +1,6 @@
 package com.documentador.backend.repositories;
 
-import com.documentador.dominio.model.Usuario;
+import com.documentador.backend.dominio.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

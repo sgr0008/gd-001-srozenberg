@@ -1,4 +1,4 @@
-package com.documentador.casodeuso.util;
+package com.documentador.backend.casodeuso.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.documentador.dominio.model;
+package com.documentador.backend.dominio.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

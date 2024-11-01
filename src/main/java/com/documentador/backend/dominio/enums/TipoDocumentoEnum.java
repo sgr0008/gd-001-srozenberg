@@ -1,4 +1,4 @@
-package com.documentador.dominio.enums;
+package com.documentador.backend.dominio.enums;
 /**
  * Tipo o clasificacion particular del documento de un grupo.
  */

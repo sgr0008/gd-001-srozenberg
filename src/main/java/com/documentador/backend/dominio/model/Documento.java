@@ -1,7 +1,7 @@
-package com.documentador.dominio.model;
+package com.documentador.backend.dominio.model;
 
-import com.documentador.dominio.enums.EstadoDocumentoEnum;
-import com.documentador.dominio.enums.TipoDocumentoEnum;
+import com.documentador.backend.dominio.enums.EstadoDocumentoEnum;
+import com.documentador.backend.dominio.enums.TipoDocumentoEnum;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

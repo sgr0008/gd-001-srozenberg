@@ -1,4 +1,4 @@
-package com.documentador.dominio.model;
+package com.documentador.backend.dominio.model;
 
 /***
  * Encabezado general de un grupo de documentos
