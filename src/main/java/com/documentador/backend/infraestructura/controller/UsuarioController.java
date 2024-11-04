@@ -27,7 +27,7 @@ public class UsuarioController {
    @PostMapping("/savedUsuario")
    public ResponseEntity<Usuario> saveProduct(@RequestBody Usuario usuario) {
     Usuario savedUsuario = usuarioService.save(usuario);
-     return new ResponseEntity<>(usuario, HttpStatus.CREATED);
+     return new ResponseEntity<>(savedUsuario, HttpStatus.CREATED);
    }
 
 
@@ -40,7 +40,7 @@ public class UsuarioController {
 
 
    //get all the products in the table in our database
-   @GetMapping("/AllUsuarioss")
+   @GetMapping("/AllUsuarios")
    public List<Usuario> getUsuarios() {
        return usuarioService.findAll();
    }

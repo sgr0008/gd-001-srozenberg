@@ -8,11 +8,23 @@
 	"item": [
 		{
 			"name": "Fing All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/api/usuario/usuarios",
+					"raw": "http://localhost:8080/api/usuario/AllUsuarios",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -21,7 +33,43 @@
 					"path": [
 						"api",
 						"usuario",
-						"usuarios"
+						"AllUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/usuarioDeleteByID?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						"usuarioDeleteByID"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
 					]
 				}
 			},
@@ -37,7 +85,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"name\":\"ss\",\r\n   \"fechaCreacion\":20241103\r\n}",
+					"raw": "{\r\n\"id\":12,\r\n   \"name\":\"ss\",\r\n   \"fechaCreacion\":20241103\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -45,7 +93,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/usuario/cargarUsuarios",
+					"raw": "http://localhost:8080/api/usuario/savedUsuario",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -54,7 +102,7 @@
 					"path": [
 						"api",
 						"usuario",
-						"cargarUsuarios"
+						"savedUsuario"
 					]
 				}
 			},

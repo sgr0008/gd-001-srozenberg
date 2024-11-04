@@ -21,16 +21,16 @@ public class DocumentoServiceImpl implements DocumentoService {
 
 
     @Override
-    public  Documento updateInfo(long usuarioID, Documento Documento){
-       Documento documentacionDB= this.findById(usuarioID).orElse(null);
+    public  Documento updateDocumento(long documentoID, Documento documento){
+       Documento documentacionDB= this.findById(documentoID).orElse(null);
       if(documentacionDB.equals(null))
-          this.save(Documento);
-      return Documento;
+          this.save(documento);
+      return documento;
 
     }
     @Override
-    public Documento save(Documento infoAlta) {
-        return documentoRepository.save(infoAlta);
+    public Documento save(Documento documentoAlta) {
+        return documentoRepository.save(documentoAlta);
     }
     @Override
     public Optional<Documento> findById(Long id) {

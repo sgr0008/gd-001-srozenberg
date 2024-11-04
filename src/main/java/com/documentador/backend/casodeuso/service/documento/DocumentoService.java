@@ -16,6 +16,6 @@ public interface DocumentoService {
 
     void deleteById(Long id);
 
-    Documento updateInfo(long infoID, Documento Documento);
+    Documento updateDocumento(long documentoID, Documento documento);
 
 }

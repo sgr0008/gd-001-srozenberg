@@ -22,17 +22,17 @@ public class InfoController {
 
 
   // insert a info into database
-   @PostMapping("/savedUsuario")
-   public ResponseEntity<Info> saveProduct(@RequestBody Info info) {
-    Info savedinfo = infoService.save(info);
-     return new ResponseEntity<>(info, HttpStatus.CREATED);
+   @PostMapping("/saveInfo")
+   public ResponseEntity<Info> saveInfo(@RequestBody Info info) {
+        Info savedinfo = infoService.save(info);
+     return new ResponseEntity<>(savedinfo, HttpStatus.CREATED);
    }
 
 
   //get a single info by its id
-   @GetMapping("/usuarioById")
-   public ResponseEntity<Info> getUsuario(@RequestParam(name = "id") long usuarioId) {
-       Optional<Info> info = infoService.findById(usuarioId);
+   @GetMapping("/infoById")
+   public ResponseEntity<Info> getInfo(@RequestParam(name = "id") long infoId) {
+            Optional<Info> info = infoService.findById(infoId);
        return new ResponseEntity<Info>(info.orElse(null), HttpStatus.OK);
    }
 
@@ -45,7 +45,7 @@ public class InfoController {
 
 
    //update an existing info in the database
-   @PatchMapping("/usuarioUpdate")
+   @PatchMapping("/infoUpdate")
    public ResponseEntity<Info> updateProduct(@RequestParam(name ="id") long id, @RequestBody Info info) {
        Info updatedInfo = infoService.updateInfo(id, info);
        return new ResponseEntity<>(updatedInfo, HttpStatus.OK);
@@ -53,11 +53,11 @@ public class InfoController {
 
 
    // delete an existing info in the database
-   @DeleteMapping("/usuarioDeleteByID")
+   @DeleteMapping("/infoDeleteByID")
    public ResponseEntity<Info> deleteProduct(@RequestParam(name ="id") long id) {
-       Info deletedProduct =infoService.findById(id).orElse(null);
+       Info deletedInfo =infoService.findById(id).orElse(null);
        infoService.deleteById(id);
-       return new ResponseEntity<>(deletedProduct, HttpStatus.OK);
+       return new ResponseEntity<>(deletedInfo, HttpStatus.OK);
    }
 
   
