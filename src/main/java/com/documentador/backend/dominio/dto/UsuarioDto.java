@@ -1,16 +1,17 @@
-package com.documentador.backend.dominio.model;
+package com.documentador.backend.dominio.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "usuario")
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
-public class Usuario {
+public class UsuarioDto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,10 +19,4 @@ public class Usuario {
     private String name;
     @Column (unique = true)
     private int fechaCreacion;
-
-    public Usuario(Long id, String descrip, int fecha) {
-        this.id=id;
-        this.name=descrip;
-        this.fechaCreacion=fecha;
-    }
 }

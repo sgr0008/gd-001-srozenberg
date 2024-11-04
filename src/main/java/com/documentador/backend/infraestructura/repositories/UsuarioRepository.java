@@ -1,16 +1,10 @@
-package com.documentador.backend.repositories;
+package com.documentador.backend.infraestructura.repositories;
 
 import com.documentador.backend.dominio.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-
-    List<Usuario> findAll();
-    Usuario findByNombre(String nombre);
-    List<Usuario> findByFechaCreacion(int fechaCreacion);
 
 }

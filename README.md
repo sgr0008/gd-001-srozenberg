@@ -21,5 +21,7 @@ PRUEBAS            TODO
 INFO. ADICIONAL
     En la carpeta 0001-Doc : Documentaciones adicionales.
 
-    Ultimo Update  [20241101]
+GITHUB : https://github.com/sgr0008/gd-001-srozenberg/tree/main/src/main/java/com/documentador
+
+    Ultimo Update  [20241103]
                 
