@@ -19,9 +19,15 @@ ETAPAS DE PRUBAS
 PRUEBAS            TODO
 
 INFO. ADICIONAL
-    En la carpeta 0001-Doc : Documentaciones adicionales.
+    En la carpeta 0001-Doc/0002-Doc/0003-Doc : Documentaciones adicionales.
 
-GITHUB : https://github.com/sgr0008/gd-001-srozenberg/tree/main/src/main/java/com/documentador
+GITHUB : https://github.com/sgr0008/gd-001-srozenberg
+Ultimo Update  [20241104]
 
-    Ultimo Update  [20241103]
-                
+-------------------------------------------------------------------------------------------------
+
+TODO :Junit y Postman.
+PD: Estuveresolvinedo incidentes productivos en el cliente (Banco) , que me impidieron entregar todo
+
+GITHUB url : 
+https://github.com/sgr0008/gd-001-srozenberg/tree/main/src/main/java/com/documentador
