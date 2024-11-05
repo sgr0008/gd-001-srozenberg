@@ -15,7 +15,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("api/usuario")
+@RequestMapping("api/usuario/")
 public class UsuarioController {
 
 
@@ -24,38 +24,38 @@ public class UsuarioController {
 
 
   // insert a usuario into database
-   @PostMapping("/savedUsuario")
+   @PostMapping
    public ResponseEntity<Usuario> saveProduct(@RequestBody Usuario usuario) {
-    Usuario savedUsuario = usuarioService.save(usuario);
+        usuario.setId(0L);
+       Usuario savedUsuario = usuarioService.save(usuario);
      return new ResponseEntity<>(savedUsuario, HttpStatus.CREATED);
    }
 
-
   //get a single usuario by its id
-   @GetMapping("/usuarioById")
-   public ResponseEntity<Usuario> getUsuario(@RequestParam(name = "id") long usuarioId) {
-       Optional<Usuario> usuario = usuarioService.findById(usuarioId);
+   @GetMapping("findById/{id}")
+   public ResponseEntity<Usuario> getUsuario(@RequestParam(name = "id") long id) {
+       Optional<Usuario> usuario = usuarioService.findById(id);
        return new ResponseEntity<Usuario>(usuario.orElse(null), HttpStatus.OK);
    }
 
 
    //get all the products in the table in our database
-   @GetMapping("/AllUsuarios")
+   @GetMapping("usuarios")
    public List<Usuario> getUsuarios() {
        return usuarioService.findAll();
    }
 
 
    //update an existing usuario in the database
-   @PatchMapping("/usuarioUpdate")
+   @PatchMapping("{id}")
    public ResponseEntity<Usuario> updateProduct(@RequestParam(name ="id") long id, @RequestBody Usuario usuario) {
        Usuario updatedProduct = usuarioService.updateUsuario(id, usuario);
-       return new ResponseEntity<>(updatedProduct, HttpStatus.OK);
+       return new ResponseEntity<>(updatedProduct, HttpStatus.ACCEPTED);
    }
 
 
    // delete an existing usuario in the database
-   @DeleteMapping("/usuarioDeleteByID")
+   @DeleteMapping("borrar/{id}")
    public ResponseEntity<Usuario> deleteProduct(@RequestParam(name ="id") long id) {
        Usuario deletedUsuario =usuarioService.findById(id).orElse(null);
        usuarioService.deleteById(id);

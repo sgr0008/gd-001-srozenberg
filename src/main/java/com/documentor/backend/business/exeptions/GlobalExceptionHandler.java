@@ -12,10 +12,10 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(exception.getHttp()).body(apiResponseException);
     }
 
-    @ExceptionHandler(NotFoundProductExeptions.class)
-    public ResponseEntity<ResponseException> notFoundProductExeptionsException(NotFoundProductExeptions productExeptions) {
-        ResponseException apiResponseException = new ResponseException(productExeptions.getMessage(), productExeptions.getCode(), productExeptions.getHttp());
-        return ResponseEntity.status(productExeptions.getHttp()).body(apiResponseException);
+    @ExceptionHandler(NotFoundUserExeptions.class)
+    public ResponseEntity<ResponseException> notFoundProductExeptionsException(NotFoundUserExeptions usuarioExeptions) {
+        ResponseException apiResponseException = new ResponseException(usuarioExeptions.getMessage(), usuarioExeptions.getCode(), usuarioExeptions.getHttp());
+        return ResponseEntity.status(usuarioExeptions.getHttp()).body(apiResponseException);
     }
 
     public ResponseEntity<ResponseException> invalidProductEx(UsuarioInvalidoException exeptions){

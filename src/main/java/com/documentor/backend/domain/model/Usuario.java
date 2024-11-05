@@ -16,7 +16,7 @@ public class Usuario {
     private Long id;
     @Column(unique = true)
     private String name;
-    @Column (unique = true)
+    @Column (unique = false)
     private int fechaCreacion;
 
     public Usuario(Long id, String descrip, int fecha) {
