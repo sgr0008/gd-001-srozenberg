@@ -32,7 +32,7 @@ public class UsuarioController {
    }
 
   //get a single usuario by its id
-   @GetMapping("findById/{id}")
+   @GetMapping("{id}")
    public ResponseEntity<Usuario> getUsuario(@RequestParam(name = "id") long id) {
        Optional<Usuario> usuario = usuarioService.findById(id);
        return new ResponseEntity<Usuario>(usuario.orElse(null), HttpStatus.OK);
@@ -49,13 +49,14 @@ public class UsuarioController {
    //update an existing usuario in the database
    @PatchMapping("{id}")
    public ResponseEntity<Usuario> updateProduct(@RequestParam(name ="id") long id, @RequestBody Usuario usuario) {
-       Usuario updatedProduct = usuarioService.updateUsuario(id, usuario);
-       return new ResponseEntity<>(updatedProduct, HttpStatus.ACCEPTED);
+       usuario.setId(id);
+       usuarioService.updateUsuario(id,usuario);
+       return new ResponseEntity<>(usuario, HttpStatus.ACCEPTED);
    }
 
 
    // delete an existing usuario in the database
-   @DeleteMapping("borrar/{id}")
+   @DeleteMapping("{id}")
    public ResponseEntity<Usuario> deleteProduct(@RequestParam(name ="id") long id) {
        Usuario deletedUsuario =usuarioService.findById(id).orElse(null);
        usuarioService.deleteById(id);

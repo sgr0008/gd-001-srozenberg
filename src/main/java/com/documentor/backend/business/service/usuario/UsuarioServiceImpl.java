@@ -26,13 +26,11 @@ public class UsuarioServiceImpl implements UsuarioService {
         return usuarioRepository.save(usuaroAlta);
     }
     @Override
-    public  Usuario updateUsuario(long usuarioID, Usuario usuario){
-       Usuario usuarioDB= this.findById(usuarioID).orElse(null);
-      if(usuarioDB.equals(null))
-          this.save(usuario);
-      return usuario;
-
+    public  Usuario updateUsuario(long id, Usuario usuario){
+        usuario.setId(id);
+        return usuarioRepository.save(usuario);
     }
+
     @Override
     public Usuario save(Usuario usuaroAlta) {
         return usuarioRepository.save(usuaroAlta);
