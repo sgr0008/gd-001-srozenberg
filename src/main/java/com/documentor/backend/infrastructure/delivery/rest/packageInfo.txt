@@ -1,1 +1,0 @@
-En este paquete planteo una migracion e implementacio Swagger para la etapa II del proyecto.

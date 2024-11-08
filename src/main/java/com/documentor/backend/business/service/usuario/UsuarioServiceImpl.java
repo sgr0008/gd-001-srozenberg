@@ -40,6 +40,7 @@ public class UsuarioServiceImpl implements UsuarioService {
         return usuarioRepository.findById(id);
     }
 
+
     @Override
     public void deleteById(Long id) {
         usuarioRepository.deleteById(id);
