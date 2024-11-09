@@ -1,4 +1,4 @@
-package com.documentor.backend.domain.mapper.usuario;
+package com.documentor.backend.domain.mapper;
 
 import com.documentor.backend.domain.dto.UsuarioDto;
 import com.documentor.backend.domain.model.Usuario;

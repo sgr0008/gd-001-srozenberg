@@ -8,8 +8,8 @@ import lombok.*;
 @Data
 @Builder
 public class DocumentoDto {
+
     private String tituloPrincipal;
-    private int fechaCreacion;
     private String nombre;
     private TipoDocumentoEnum tipoDocumento;
     private Info contenido;
@@ -17,4 +17,5 @@ public class DocumentoDto {
     private EstadoDocumentoEnum estado;
     //Fecha int yyyyMMDDDhhmmss
     private int fechaUltimoCambio;
+    private int fechaCreacion;
 }

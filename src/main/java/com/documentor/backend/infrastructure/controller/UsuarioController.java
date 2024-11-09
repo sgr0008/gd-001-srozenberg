@@ -1,7 +1,7 @@
 package com.documentor.backend.infrastructure.controller;
 
 
-import com.documentor.backend.casodeuso.service.usuario.UsuarioService;
+import com.documentor.backend.business.service.usuario.UsuarioService;
 import com.documentor.backend.domain.model.Usuario;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -65,7 +65,7 @@ public class UsuarioController {
            @ApiResponse(code = 400, message = "Algun parametro no cumple con el formato o es requerido y no esta presente"),
            @ApiResponse(code = 500, message = "Error interno de servidor")})
    @PatchMapping( path = "{id}", produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_PROBLEM_JSON_VALUE})
-   public ResponseEntity<Usuario> updateProduct(@RequestParam(name ="id") long id, @RequestBody Usuario usuario) {
+   public ResponseEntity<Usuario> updateUsuario(@RequestParam(name ="id") long id, @RequestBody Usuario usuario) {
        usuario.setId(id);
        usuarioService.updateUsuario(id,usuario);
        return new ResponseEntity<>(usuario, HttpStatus.ACCEPTED);

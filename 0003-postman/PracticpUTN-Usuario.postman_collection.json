@@ -54,7 +54,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/usuario/{id}?id=16",
+					"raw": "http://localhost:8080/api/usuario/{id}?id=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -68,7 +68,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "16"
+							"value": "2"
 						}
 					]
 				}
@@ -93,7 +93,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/usuario/{id}?id=16",
+					"raw": "http://localhost:8080/api/usuario/{id}?id=2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -107,7 +107,7 @@
 					"query": [
 						{
 							"key": "id",
-							"value": "16"
+							"value": "2"
 						}
 					]
 				}
@@ -129,7 +129,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/usuario/(id)?id=16",
+					"raw": "http://localhost:8080/api/usuario/(id)?id=12",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -153,7 +153,7 @@
 						},
 						{
 							"key": "id",
-							"value": "16"
+							"value": "12"
 						}
 					]
 				}
@@ -170,7 +170,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n \r\n   \"name\":\"AlataI111nsrt\",\r\n   \"fechaCreacion\":20241105\r\n}",
+					"raw": "{\r\n \r\n   \"name\":\"RRRR\",\r\n   \"fechaCreacion\":20241107\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -8,18 +8,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /***
- * Informacion¿ de los documentos de un grupo
+ * Informacion del Documento
  */
 @Table(name = "documento")
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
-public class Documento extends Encabezado {
+public class Documento  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
+    private String tituloPrincipal;
     @Column
     private String nombre;
     @Column
@@ -32,9 +34,11 @@ public class Documento extends Encabezado {
     private Usuario usuario;
     @Column
     private EstadoDocumentoEnum estado;
-    //Fecha int yyyyMMDDDhhmmss
+    //Fecha int yyyyMMDDDhhmmss  para facilitar ordenamiento
     @Column
     private int fechaUltimoCambio;
+    @Column
+    private int fechaCreacion;
 
 
 

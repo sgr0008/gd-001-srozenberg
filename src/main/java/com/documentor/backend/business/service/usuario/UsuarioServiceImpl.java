@@ -1,5 +1,6 @@
 package com.documentor.backend.casodeuso.service.usuario;
 
+import com.documentor.backend.business.service.usuario.UsuarioService;
 import com.documentor.backend.domain.model.Usuario;
 import com.documentor.backend.infrastructure.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
