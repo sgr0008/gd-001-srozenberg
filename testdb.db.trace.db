@@ -398,3 +398,237 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statem
 2024-11-07 21:38:24.652089-03:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found (this database is empty); SQL statement:
 select u1_0.id,u1_0.fecha_creacion,u1_0.name from usuario u1_0 [42104-224]
+2024-11-08 20:49:41.886110-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT @[*]@character_set_database, @@sql_mode"; expected "identifier"; SQL statement:
+SELECT @@character_set_database, @@sql_mode [42001-224]
+2024-11-08 20:49:44.404350-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found (this database is empty); SQL statement:
+
+    alter table documento 
+       drop 
+       foreign key FKpqeqvubhdj0ukt22j14id1vh8 [42104-224]
+2024-11-08 20:49:44.423609-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found (this database is empty); SQL statement:
+
+    alter table documento 
+       drop 
+       foreign key FK12wwnlkdoe79h38nvn5huqo0b [42104-224]
+2024-11-08 20:49:44.456828-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table documento (\000d\000a        estado tinyint,\000d\000a        fecha_ultimo_cambio integer,\000d\000a        tipo_documento tinyint,\000d\000a        contenido_id bigint,\000d\000a        id bigint not null auto_increment,\000d\000a        usuario_id bigint,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table documento (
+        estado tinyint,
+        fecha_ultimo_cambio integer,
+        tipo_documento tinyint,
+        contenido_id bigint,
+        id bigint not null auto_increment,
+        usuario_id bigint,
+        nombre varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 20:49:44.471259-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table info (\000d\000a        fecha_ultimo_cambio integer,\000d\000a        id bigint not null auto_increment,\000d\000a        descripcion TEXT,\000d\000a        info TEXT,\000d\000a        nombre TEXT,\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table info (
+        fecha_ultimo_cambio integer,
+        id bigint not null auto_increment,
+        descripcion TEXT,
+        info TEXT,
+        nombre TEXT,
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 20:49:44.483789-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table usuario (\000d\000a        fecha_creacion integer,\000d\000a        id bigint not null auto_increment,\000d\000a        name varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table usuario (
+        fecha_creacion integer,
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 20:49:44.493618-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint UK1bys21b94cua541q90r5ov9vl unique (conteni [42102-224]
+2024-11-08 20:49:44.498964-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint UKa0r4cj14pffpslhh3k7p3yed7 unique (usuar [42102-224]
+2024-11-08 20:49:44.504287-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+
+    alter table usuario 
+       add constraint UKpmgbijk22x1qv650yjmvj4j1b unique  [42102-224]
+2024-11-08 20:49:44.509141-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint FKpqeqvubhdj0ukt22j14id1vh8 
+       foreign key (contenido_id) 
+       references inf [42102-224]
+2024-11-08 20:49:44.514037-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint FK12wwnlkdoe79h38nvn5huqo0b 
+       foreign key (usuario_id) 
+       references usuari [42102-224]
+2024-11-08 20:49:48.623387-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found (this database is empty); SQL statement:
+select u1_0.id,u1_0.fecha_creacion,u1_0.name from usuario u1_0 [42104-224]
+2024-11-08 20:54:06.500657-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT @[*]@character_set_database, @@sql_mode"; expected "identifier"; SQL statement:
+SELECT @@character_set_database, @@sql_mode [42001-224]
+2024-11-08 20:54:08.149476-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found (this database is empty); SQL statement:
+
+    alter table documento 
+       drop 
+       foreign key FKpqeqvubhdj0ukt22j14id1vh8 [42104-224]
+2024-11-08 20:54:08.171288-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found (this database is empty); SQL statement:
+
+    alter table documento 
+       drop 
+       foreign key FK12wwnlkdoe79h38nvn5huqo0b [42104-224]
+2024-11-08 20:54:08.196912-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table documento (\000d\000a        estado tinyint,\000d\000a        fecha_ultimo_cambio integer,\000d\000a        tipo_documento tinyint,\000d\000a        contenido_id bigint,\000d\000a        id bigint not null auto_increment,\000d\000a        usuario_id bigint,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table documento (
+        estado tinyint,
+        fecha_ultimo_cambio integer,
+        tipo_documento tinyint,
+        contenido_id bigint,
+        id bigint not null auto_increment,
+        usuario_id bigint,
+        nombre varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 20:54:08.208554-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table info (\000d\000a        fecha_ultimo_cambio integer,\000d\000a        id bigint not null auto_increment,\000d\000a        descripcion TEXT,\000d\000a        info TEXT,\000d\000a        nombre TEXT,\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table info (
+        fecha_ultimo_cambio integer,
+        id bigint not null auto_increment,
+        descripcion TEXT,
+        info TEXT,
+        nombre TEXT,
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 20:54:08.215307-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table usuario (\000d\000a        fecha_creacion integer,\000d\000a        id bigint not null auto_increment,\000d\000a        name varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table usuario (
+        fecha_creacion integer,
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 20:54:08.223984-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint UK1bys21b94cua541q90r5ov9vl unique (conteni [42102-224]
+2024-11-08 20:54:08.230458-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint UKa0r4cj14pffpslhh3k7p3yed7 unique (usuar [42102-224]
+2024-11-08 20:54:08.235192-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+
+    alter table usuario 
+       add constraint UKpmgbijk22x1qv650yjmvj4j1b unique  [42102-224]
+2024-11-08 20:54:08.242906-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint FKpqeqvubhdj0ukt22j14id1vh8 
+       foreign key (contenido_id) 
+       references inf [42102-224]
+2024-11-08 20:54:08.248560-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint FK12wwnlkdoe79h38nvn5huqo0b 
+       foreign key (usuario_id) 
+       references usuari [42102-224]
+2024-11-08 21:01:21.602258-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT @[*]@character_set_database, @@sql_mode"; expected "identifier"; SQL statement:
+SELECT @@character_set_database, @@sql_mode [42001-224]
+2024-11-08 21:01:23.007690-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found (this database is empty); SQL statement:
+
+    alter table documento 
+       drop 
+       foreign key FKpqeqvubhdj0ukt22j14id1vh8 [42104-224]
+2024-11-08 21:01:23.019182-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found (this database is empty); SQL statement:
+
+    alter table documento 
+       drop 
+       foreign key FK12wwnlkdoe79h38nvn5huqo0b [42104-224]
+2024-11-08 21:01:23.041637-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table documento (\000d\000a        estado tinyint,\000d\000a        fecha_ultimo_cambio integer,\000d\000a        tipo_documento tinyint,\000d\000a        contenido_id bigint,\000d\000a        id bigint not null auto_increment,\000d\000a        usuario_id bigint,\000d\000a        nombre varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table documento (
+        estado tinyint,
+        fecha_ultimo_cambio integer,
+        tipo_documento tinyint,
+        contenido_id bigint,
+        id bigint not null auto_increment,
+        usuario_id bigint,
+        nombre varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 21:01:23.047945-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table info (\000d\000a        fecha_ultimo_cambio integer,\000d\000a        id bigint not null auto_increment,\000d\000a        descripcion TEXT,\000d\000a        info TEXT,\000d\000a        nombre TEXT,\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table info (
+        fecha_ultimo_cambio integer,
+        id bigint not null auto_increment,
+        descripcion TEXT,
+        info TEXT,
+        nombre TEXT,
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 21:01:23.053595-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table usuario (\000d\000a        fecha_creacion integer,\000d\000a        id bigint not null auto_increment,\000d\000a        name varchar(255),\000d\000a        primary key (id)\000d\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table usuario (
+        fecha_creacion integer,
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB [42001-224]
+2024-11-08 21:01:23.057951-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint UK1bys21b94cua541q90r5ov9vl unique (conteni [42102-224]
+2024-11-08 21:01:23.061794-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint UKa0r4cj14pffpslhh3k7p3yed7 unique (usuar [42102-224]
+2024-11-08 21:01:23.064808-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+
+    alter table usuario 
+       add constraint UKpmgbijk22x1qv650yjmvj4j1b unique  [42102-224]
+2024-11-08 21:01:23.067807-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint FKpqeqvubhdj0ukt22j14id1vh8 
+       foreign key (contenido_id) 
+       references inf [42102-224]
+2024-11-08 21:01:23.070809-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCUMENTO" not found; SQL statement:
+
+    alter table documento 
+       add constraint FK12wwnlkdoe79h38nvn5huqo0b 
+       foreign key (usuario_id) 
+       references usuari [42102-224]

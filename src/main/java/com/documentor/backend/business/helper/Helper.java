@@ -1,4 +1,4 @@
-package com.documentor.backend.casodeuso.builder.helper;
+package com.documentor.backend.business.helper;
 
 /***
  *  Clase responsable de la implementaciones
