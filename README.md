@@ -2,16 +2,16 @@
 
 PROYECTO
 
-        Se crean documento que tienen un encabezado, un contexto /informacion (En la etapa 1. )
+        Se crean document que tienen un encabezado, un contexto /informacion (En la etapa 1. )
     se genera en forma manual.).
-         Los documentos se agrupan ;por el tipo (INFO,ERROR,SOLUCION,PRUEBA.) y cada documento ; para la trazbilidad tiene un estado asociado ,
+         Los documents se agrupan ;por el tipo (INFO,ERROR,SOLUCION,PRUEBA.) y cada document ; para la trazbilidad tiene un estado asociado ,
     fecha de ultima modificaioc y un propietario que valida las modificaciones/ cambios.
 
 FUNCIONALIDADES    TODO
 
 ETAPAS DE DESARROLLO
 
-DOING           ETAPA 1. Generar y gestionar documentos . [20241017]
+DOING           ETAPA 1. Generar y gestionar documents . [20241017]
 TODO            ETAPA 2. Automatizar la genracion de Info  con  Consulta (Pregunta/Respuesta Por IA)  , utilizando set de preguntas y respuestas generadas con IA.
 TODO            Para la ETAPA 2. ver Spring IA
 

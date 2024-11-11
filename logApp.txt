@@ -1024,20 +1024,20 @@
 2024-11-04T11:53:34.851-03:00  WARN 13368 --- [documentador] [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.44 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
 2024-11-04T11:53:34.861-03:00  WARN 13368 --- [documentador] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
 2024-11-04T11:53:36.432-03:00  INFO 13368 --- [documentador] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-Hibernate: alter table documento drop foreign key FKpqeqvubhdj0ukt22j14id1vh8
-Hibernate: alter table documento drop foreign key FK12wwnlkdoe79h38nvn5huqo0b
-Hibernate: drop table if exists documento
+Hibernate: alter table document drop foreign key FKpqeqvubhdj0ukt22j14id1vh8
+Hibernate: alter table document drop foreign key FK12wwnlkdoe79h38nvn5huqo0b
+Hibernate: drop table if exists document
 Hibernate: drop table if exists info
 Hibernate: drop table if exists usuario
-Hibernate: create table documento (estado tinyint, fecha_ultimo_cambio integer, tipo_documento tinyint, contenido_id bigint, id bigint not null auto_increment, usuario_id bigint, nombre varchar(255), primary key (id)) engine=InnoDB
+Hibernate: create table document (estado tinyint, fecha_ultimo_cambio integer, tipo_document tinyint, contenido_id bigint, id bigint not null auto_increment, usuario_id bigint, nombre varchar(255), primary key (id)) engine=InnoDB
 Hibernate: create table info (fecha_ultimo_cambio integer, id bigint not null auto_increment, descripcion TEXT, info TEXT, nombre TEXT, primary key (id)) engine=InnoDB
 Hibernate: create table usuario (fecha_creacion integer, id bigint not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB
-Hibernate: alter table documento add constraint UK1bys21b94cua541q90r5ov9vl unique (contenido_id)
-Hibernate: alter table documento add constraint UKa0r4cj14pffpslhh3k7p3yed7 unique (usuario_id)
+Hibernate: alter table document add constraint UK1bys21b94cua541q90r5ov9vl unique (contenido_id)
+Hibernate: alter table document add constraint UKa0r4cj14pffpslhh3k7p3yed7 unique (usuario_id)
 Hibernate: alter table usuario add constraint UKn1t7mwebncckq9yml0wk5ol4m unique (fecha_creacion)
 Hibernate: alter table usuario add constraint UKpmgbijk22x1qv650yjmvj4j1b unique (name)
-Hibernate: alter table documento add constraint FKpqeqvubhdj0ukt22j14id1vh8 foreign key (contenido_id) references info (id)
-Hibernate: alter table documento add constraint FK12wwnlkdoe79h38nvn5huqo0b foreign key (usuario_id) references usuario (id)
+Hibernate: alter table document add constraint FKpqeqvubhdj0ukt22j14id1vh8 foreign key (contenido_id) references info (id)
+Hibernate: alter table document add constraint FK12wwnlkdoe79h38nvn5huqo0b foreign key (usuario_id) references usuario (id)
 2024-11-04T11:53:38.177-03:00  INFO 13368 --- [documentador] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2024-11-04T11:53:39.199-03:00  INFO 13368 --- [documentador] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2024-11-04T11:53:39.215-03:00  INFO 13368 --- [documentador] [           main] c.documentador.DocumentadorApplication   : Started DocumentadorApplication in 8.268 seconds (process running for 8.816)
